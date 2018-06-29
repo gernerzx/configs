@@ -10,4 +10,8 @@ bindkey '^[[B' history-search-forward
 alias gvim gvim -p
 
 set history=1000
+set histdup=erase
 set savehist=(1000 merge)
+set histfile = ~/.history
+alias precmd 'history -S; history -M'
+
